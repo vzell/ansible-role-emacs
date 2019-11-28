@@ -14,13 +14,34 @@
 - name: install build dependencies
   yum:
     name:
-      - giflib-devel
-      - gnutls-devel
-      - gtk3-devel
-      - libjpeg-turbo-devel
-      - libtiff-devel
+      - gtk+-devel
+      - gtk2-devel
       - libXpm-devel
+      - libpng-devel
+      - giflib-devel
+      - libtiff-devel
+      - libjpeg-devel
       - ncurses-devel
+      - gpm-devel
+      - dbus-devel
+      - dbus-glib-devel
+      - dbus-python
+      - GConf2-devel
+      - pkgconfig
+      - libXft-devel
+      - libxml2-devel
+      - gnutls-devel
+      - jasper
+      - jasper-devel
+      - libgs-devel
+      - ImageMagick-devel
+      - lcms2-devel
+      - gpm-devel
+      - librsvg2-devel
+      - m17n-lib-devel
+      - libacl-devel
+      - Xaw3d
+      - Xaw3d-devel
   become: true
 
 - name: check if directory to store Emacs source code exists
