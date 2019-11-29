@@ -1,6 +1,6 @@
 ---
 
 version:      26.3
-config_url:   https://raw.githubusercontent.com/shellbro/dotfiles/master/.emacs.d/init.el
+config_url:   https://raw.githubusercontent.com/vzell/dotemacs/master/init.el
 config_dir:   /home/vagrant/.emacs.d
 config_owner: vagrant
