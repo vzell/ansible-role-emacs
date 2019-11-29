@@ -41,6 +41,7 @@
       - libacl-devel
       - Xaw3d-devel
   become: true
+  notify: configure
 
 - name: check if directory to store Emacs source code exists
   stat:
