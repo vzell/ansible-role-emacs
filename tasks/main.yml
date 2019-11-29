@@ -15,7 +15,7 @@
   yum:
     name:
       - gtk+-devel
-      - gtk2-devel
+      - gtk3-devel
       - libXpm-devel
       - libpng-devel
       - giflib-devel
@@ -31,7 +31,6 @@
       - libXft-devel
       - libxml2-devel
       - gnutls-devel
-      - jasper
       - jasper-devel
       - libgs-devel
       - ImageMagick-devel
@@ -40,7 +39,6 @@
       - librsvg2-devel
       - m17n-lib-devel
       - libacl-devel
-      - Xaw3d
       - Xaw3d-devel
   become: true
 
