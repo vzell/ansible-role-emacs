@@ -70,7 +70,7 @@
   become: true
   notify: configure
 
-- name: create directory for Emacs config file
+- name: create directory for Emacs config files
   file:
     group: "{{ config_group }}"
     mode: 0700
@@ -79,11 +79,20 @@
     state: directory
   become: true
 
-- name: download config file
+- name: download init.el file
   get_url:
-    dest: "{{ config_dir }}"
+    dest:  "{{ config_dir }}"
     group: "{{ config_group }}"
-    mode: 0664
+    mode:  0664
     owner: "{{ config_owner }}"
-    url: "{{ config_url }}"
+    url:   "{{ config_url_init }}"
+  become: true
+
+- name: download custom.el file
+  get_url:
+    dest:  "{{ config_dir }}"
+    group: "{{ config_group }}"
+    mode:  0664
+    owner: "{{ config_owner }}"
+    url:   "{{ config_url_custom }}"
   become: true
